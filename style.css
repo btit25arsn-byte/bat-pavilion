@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+h1, h2, h3, .eport-heading, .navbar-brand {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* RED THEME NAVBAR */
+.navbar {
+  background: rgba(185, 28, 28, 0.97);
+  backdrop-filter: blur(10px);
+}
+.navbar-brand {
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #fff !important;
+}
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.nav-link:hover { color: #fca5a5 !important; }
+
+/* Hero */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(185,28,28,0.55), rgba(0,0,0,0.78)),
+    url('https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.hero h1 { font-size: 4.5rem; font-weight: 900; text-transform: uppercase; }
+.hero span { color: #fca5a5; }
+
+/* Section title */
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 800;
+  position: relative;
+  padding-bottom: 15px;
+}
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 80px; height: 4px;
+  background: #dc2626;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Product Cards */
+.bat-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+  transition: 0.3s ease-in-out;
+  background: #fff;
+}
+.bat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(185,28,28,0.18);
+}
+.bat-card img {
+  height: 280px;
+  object-fit: cover;
+  width: 100%;
+}
+.bat-card .bat-img-wrap {
+  height: 280px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.badge-willow {
+  position: absolute;
+  top: 15px; left: 15px;
+  background: #dc2626;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 5px;
+  z-index: 2;
+}
+.price-tag { font-size: 1.4rem; font-weight: 700; color: #dc2626; }
+
+/* Order form */
+.order-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.hidden { display: none; }
+
+/* Red button overrides */
+.btn-warning, .btn-dark {
+  background-color: #dc2626 !important;
+  border-color: #dc2626 !important;
+  color: #fff !important;
+}
+.btn-warning:hover, .btn-dark:hover {
+  background-color: #991b1b !important;
+  border-color: #991b1b !important;
+}
+
+footer { background: #111; color: #aaa; padding: 30px 0; }
+
+/* ── ePORTFOLIO SECTIONS ── */
+.eport-section { padding: 80px 0; }
+.eport-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: #dc2626;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.eport-heading {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+.eport-heading span { color: #dc2626; font-style: italic; }
+.eport-body {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: #444;
+  margin-bottom: 15px;
+}
+.code-block {
+  background: #1a1a1a;
+  color: #f0c060;
+  padding: 20px 24px;
+  border-radius: 10px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  overflow-x: auto;
+  border-left: 4px solid #dc2626;
+}
+.code-block .cm { color: #888; }
+.code-block .ck { color: #f07070; }
+.code-block .cv { color: #a8d8a8; }
+.code-block .cs { color: #87ceeb; }
+
+.demo-panel {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+.demo-panel-header {
+  background: #fef2f2;
+  border-bottom: 1px solid #fecaca;
+  padding: 12px 18px;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #dc2626;
+  font-weight: 600;
+}
+.demo-panel-body { padding: 24px; }
+.concept-tag {
+  display: inline-block;
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin: 4px;
+}
+.stack-layer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 18px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+.layer-badge {
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
